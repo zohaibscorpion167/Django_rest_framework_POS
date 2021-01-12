@@ -1,0 +1,1 @@
+default_app_config = 'POS_APP.apps.PosAppConfig'
