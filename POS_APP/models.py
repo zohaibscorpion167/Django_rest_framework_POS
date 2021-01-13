@@ -36,8 +36,8 @@ class Restaurant(models.Model):
     item_5 = models.CharField(max_length=10,blank=True, null=True)
     Total_Cost = models.CharField(max_length=5,blank=False, null=False)
     Received_By = models.CharField(max_length=10,blank=False, null=False)
-    order_date = models.DateField(default=date.today())
-    order_time = models.TimeField(default=datetime.now())
+    order_date = models.DateField(auto_now_add=True)
+    order_time = models.TimeField(auto_now_add=True)
     Status = models.BooleanField("Delivered" ,default=False)
 
 
