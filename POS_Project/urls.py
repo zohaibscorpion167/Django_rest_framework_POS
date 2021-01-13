@@ -26,6 +26,6 @@ admin.site.site_url = None
 
 urlpatterns = [
     path('', admin.site.urls),
-    path('orders/', RestaurantApiView.as_view()),
-    path('orders/<int:Order_ID>', OrderDetailsApi.as_view()),
+    path('json/orders/', RestaurantApiView.as_view()),
+    path('json/orders/<int:Order_ID>', OrderDetailsApi.as_view()),
 ]
