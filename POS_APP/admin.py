@@ -10,12 +10,6 @@ from import_export.admin import ImportExportModelAdmin
 
 
 
-
-# class StockCreateAdmin(admin.ModelAdmin):
-
-# admin.site.register(Restaurant)
-
-
 admin.site.unregister(Group)
 
 
